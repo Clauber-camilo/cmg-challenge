@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "incremental": false,
+    "lib": ["dom", "esnext"],
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "target": "es2017"
+  },
+  "exclude": ["dist/*", "node_modules", "coverage/*"]
+}
