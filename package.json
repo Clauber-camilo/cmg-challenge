@@ -10,7 +10,7 @@
     "test:coverage": "yarn test --coverage",
     "lint": "eslint 'src/**/*.ts'"
   },
-  "author": "Clauber Camilo",
+  "author": "Clauber Camilo <clauber_camilo@live.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.1.1",
