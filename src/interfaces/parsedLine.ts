@@ -1,8 +1,8 @@
-import { IReferenceValues } from './transform';
+import { EReferenceType, IReferenceValues } from './transform';
 
 export interface IParsedLine extends Partial<{ referenceValues: IReferenceValues }> {
   node: boolean;
   value?: string | number;
-  type?: string | null;
+  type?: EReferenceType | null;
   parent?: string;
 }

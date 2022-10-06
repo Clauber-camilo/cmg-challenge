@@ -1,8 +1,8 @@
 import { Interface } from 'readline';
 import { Readable } from 'stream';
 
-import { createReadLineFromString, parseLine, transformLineIntoMappedObject } from './';
-import { errorDictionary } from './errorDictionary';
+import { createReadLineFromString, parseLine, transformLineIntoMappedObject } from '../';
+import { errorDictionary } from '../errorDictionary';
 
 describe('utils :: index', () => {
   describe('createReadLineFromString', () => {

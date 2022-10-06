@@ -4,9 +4,15 @@ export interface IReferenceValues {
   monoxide: number;
 }
 
+export enum EReferenceType {
+  THERMOMETER = 'thermometer',
+  HUMIDITY = 'humidity',
+  MONOXIDE = 'monoxide',
+}
+
 export interface ITransformedObject {
   [key: string]: {
-    type: string;
+    type: EReferenceType;
     values?: number[];
   };
 }

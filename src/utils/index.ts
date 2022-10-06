@@ -2,12 +2,13 @@ import { readFileSync } from 'fs';
 import { createInterface, Interface } from 'readline';
 import { Readable } from 'stream';
 
-import { IParsedLine } from '../interfaces/parsedLine';
 import {
+  IParsedLine,
+  EReferenceType,
   IReferenceValues,
   ITransformedObject,
   ITransformMappedObject,
-} from '../interfaces/transform';
+} from '../interfaces/';
 import { errorDictionary } from './errorDictionary';
 
 const createReadLineFromString = (text: string): Interface => {
@@ -53,7 +54,7 @@ const parseLine = (line: string, parent?: string): IParsedLine => {
 
   if (line.match(regexTypeCheck)) {
     const [type, value] = line.split(' ');
-    return { node: true, value, type };
+    return { node: true, value, type: type as EReferenceType };
   }
 
   if (line.match(regexDateCheck)) {
