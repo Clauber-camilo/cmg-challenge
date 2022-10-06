@@ -30,4 +30,9 @@ const calculateMonoxideValues = (values: number[], referenceValue: number) => {
   return !discard ? EOutputValue.KEEP : EOutputValue.DISCARD;
 };
 
-export { calculateThermometerValues, calculateHumidityValues, calculateMonoxideValues };
+export {
+  calculateThermometerValues,
+  calculateHumidityValues,
+  calculateMonoxideValues,
+  isWithinTolerateRange,
+};
